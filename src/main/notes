@@ -1,0 +1,57 @@
+# CucumberBDD_June2021
+CucumberBDD Framework_June2021
+#Fix code in mac
+cmd+a to select all code option+cmd+L
+#Fix code in Windows
+CMD+A CTL+I
+#How to execute test in CMD
+/Users/jannatulnayeem/
+cd /Documents/QA_Automation/GitProject/TestingBddCucumberFrameWork_2022/
+mvn test
+mvn verify
+mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tags="@login"
+mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tags="@signup"
+
+TestNG.xml file
+this is an XML file which contains all the Test configuration and this XML file can be used to run and organize our test.
+Follow the below steps:
+
+Goto Intellij IDEA preferences ain search (command+,)
+Search for plugins
+Click on Marketplace
+Search for testng
+Install the plugin "Create TestNG XML" and Apply the changes
+Restart Intellij
+Right on your project and click on "Create TestNG XML"
+Click OK on the confirmation dialog.
+Expand the project folder and Voila, testng.xml will be created.
+
+Maven Commands
+1. mvn clean
+This command cleans the maven project by deleting the target directory.
+2. mvn compiler:compile
+This command compiles the java source classes of the maven project.
+3. mvn compiler:testCompile
+This command compiles the test classes of the maven project.
+5. mvn install
+This command builds the maven project and installs the project files (JAR, WAR, pom.xml, etc) to the local repository.
+7. mvn validate
+This command validates the maven project that everything is correct and all the necessary information is available.
+9. mvn dependency:analyze
+This command analyzes the maven project to identify the unused declared and used undeclared dependencies.
+It’s useful in reducing the build size by identifying the unused dependencies and then remove it from the pom.xml file.
+12. mvn test
+This command is used to run the test cases of the project using the maven-surefire-plugin.
+13. mvn compile
+It’s used to compile the source Java classes of the project.
+14. mvn verify
+This command build the project, runs all the test cases and run any checks on the results of the integration tests to ensure quality criteria are met.
+
+POM.XML
+<plugin>
+   <configuration>
+           <suiteXmlFiles>
+               <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+   </configuration>
+ </plugin>

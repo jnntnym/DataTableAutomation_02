@@ -1,0 +1,171 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-01T23:35:37.113Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5334000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.startTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Signup with valid credentials using DataTable",
+        "description": "",
+        "id": "sign-up-new-account-from-datatable;signup-with-valid-credentials-using-datatable",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.endTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Users in a TalentTek HomePage",
+            "match": {
+              "location": "stepDef.SignUpSteps.usersInATalentTekHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 501000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicked on Create new account button",
+            "match": {
+              "location": "stepDef.SignUpSteps.userClickedOnCreateNewAccountButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Users should be navigate to Sign Up page",
+            "match": {
+              "location": "stepDef.SignUpSteps.usersShouldBeNavigateToSignUpPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1500000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Users fill out the information as below",
+            "match": {
+              "location": "stepDef.SignUpSteps.usersFillOutTheInformationAsBelow(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FirstName",
+                  "LastName",
+                  "Email",
+                  "Password",
+                  "ConfirmPassword",
+                  "Month",
+                  "Day",
+                  "Year"
+                ]
+              },
+              {
+                "cells": [
+                  "Md.",
+                  "Nayeem",
+                  "abc@gmail.com",
+                  "xyz123",
+                  "xyz123",
+                  "Feb",
+                  "21",
+                  "2010"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user select male as gender",
+            "match": {
+              "location": "stepDef.SignUpSteps.userSelectMaleAsGender()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user click on checkbox for agreement",
+            "match": {
+              "location": "stepDef.SignUpSteps.userClickOnCheckboxForAgreement()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on create new account button",
+            "match": {
+              "location": "stepDef.SignUpSteps.userClickOnCreateNewAccountButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should able to Create new Account successfully",
+            "match": {
+              "location": "stepDef.SignUpSteps.userShouldAbleToCreateNewAccountSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signup"
+          }
+        ]
+      }
+    ],
+    "name": "Sign up new account from DataTable",
+    "description": "",
+    "id": "sign-up-new-account-from-datatable",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/signupBydataTable.feature",
+    "tags": []
+  }
+]
