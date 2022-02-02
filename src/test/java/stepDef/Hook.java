@@ -60,7 +60,7 @@ public class Hook extends BrowserSetup {
                 scenario.attach(screenshot, "image/png", scenario.getName());
             }
         } finally {
-            //driver.quit();
+            driver.quit();
         }
     }
 }

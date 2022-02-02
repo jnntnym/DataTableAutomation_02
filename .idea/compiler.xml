@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="TestingBddCucumberFrameWork_2022" />
         <module name="DataTableAutomationBddCucumber" />
+        <module name="DataTableAutomation_02" />
       </profile>
     </annotationProcessing>
   </component>
